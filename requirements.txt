@@ -1,0 +1,12 @@
+# Core libraries
+PyPDF2
+sentence-transformers
+chromadb
+
+# Web backend
+Flask
+requests
+beautifulsoup4
+
+# Utilities
+python-dotenv
