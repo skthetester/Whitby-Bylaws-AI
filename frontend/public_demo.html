@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitby By-laws AI</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="public_demo.css">
+</head>
+<body>
+    <div id="main-container">
+        <header>
+            <h1>Whitby By-laws AI</h1>
+            <p class="subtitle">Your bylaw questions answered in plain simple language</p>
+        </header>
+        <form id="query-form">
+            <input type="text" id="query" placeholder="What's on your mind?" required />
+            <button type="submit">GET ANSWER</button>
+        </form>
+        <div id="response"></div>
+        <div class="disclaimer">
+            This AI tool provides general information about Whitby by-laws and should not be considered legal advice.
+        </div>
+        <footer>
+            <a href="https://github.com/skthetester/Whitby-Bylaws-AI" target="_blank">&#xf09b; GitHub</a>
+            <div class="inspired-note" style="margin-top:8px;font-size:0.95em;color:#888;">
+                Inspired by <a href="https://bylaws.aicircle.ca/" target="_blank">bylaws.aicircle.ca</a>
+            </div>
+        </footer>
+        <section id="bylaw-details" style="display:none;">
+            <h3>Bylaw Details</h3>
+            <div id="bylaw-details-content"></div>
+            <button id="close-details">×</button>
+        </section>
+    </div>
+    <script src="public_demo.js"></script>
+</body>
+</html>

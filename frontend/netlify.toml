@@ -1,4 +1,9 @@
+[build]
+  base = "frontend/"
+  publish = "."
+  command = ""
+
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/public_demo.html"
   status = 200
