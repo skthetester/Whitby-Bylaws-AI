@@ -9,3 +9,9 @@ services:
       - ./database:/app/database
     env_file:
       - ./backend/.env
+  chromadb:
+      image: chromadb/chroma
+      ports:
+        - "8000:8000"
+      volumes:
+        - ./database/chroma-data:/chroma/chroma
