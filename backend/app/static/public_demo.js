@@ -4,7 +4,7 @@ document.getElementById('query-form').addEventListener('submit', async function(
     const responseDiv = document.getElementById('response');
     responseDiv.textContent = 'Loading...';
     try {
-        const res = await fetch('/api/ask', {
+        const res = await fetch('https://whitby-bylaws-ai.onrender.com/api/ask', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query })
