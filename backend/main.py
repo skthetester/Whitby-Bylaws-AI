@@ -1,9 +1,10 @@
+
 from flask import Flask, send_from_directory
-from app.routes import bp
+from app.routes import routes
 import os
 
 app = Flask(__name__, static_folder='app/static', template_folder='app/templates')
-app.register_blueprint(bp)
+app.register_blueprint(routes)
 
 @app.route('/')
 def index():
