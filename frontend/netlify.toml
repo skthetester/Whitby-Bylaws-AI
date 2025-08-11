@@ -7,3 +7,10 @@
   from = "/*"
   to = "/public_demo.html"
   status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; connect-src 'self' https://whitby-bylaws-ai.onrender.com; style-src 'self' 'unsafe-inline'; script-src 'self'"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
