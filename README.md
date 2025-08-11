@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f377409c-fd05-4799-a6fc-63d44144ed06/deploy-status)](https://app.netlify.com/projects/whitby-bylaws-ai/deploys)
 
 A demo project for querying Whitby bylaws using an AI backend (Flask).
 
