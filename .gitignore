@@ -1,4 +1,3 @@
-# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
 *$py.class
@@ -58,6 +57,20 @@ cover/
 # Django stuff:
 *.log
 local_settings.py
+chroma-data/
+bylaws_json/
+.env
+.env.*
+.vscode/
+*.sqlite3
+*.db
+*.bak
+*.tmp
+secrets.env
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
 db.sqlite3
 db.sqlite3-journal
 
