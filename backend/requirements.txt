@@ -1,5 +1,5 @@
 flask==2.0.1
-werkzeug==2.3.8
+werkzeug==2.0.3
 chromadb==0.6.3
 sentence-transformers==2.2.2
 transformers==4.30.2
