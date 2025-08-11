@@ -1,4 +1,3 @@
-bp = Blueprint('api', __name__)
 from flask import Blueprint, request, jsonify
 from sentence_transformers import SentenceTransformer
 import chromadb
