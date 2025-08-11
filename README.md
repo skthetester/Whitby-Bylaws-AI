@@ -1,4 +1,3 @@
-# Whitby-Bylaws-AI
 
 A demo project for querying Whitby bylaws using an AI backend (Flask).
 
@@ -44,9 +43,50 @@ Whitby-Bylaws-AI/
    Open [http://localhost:5000](http://localhost:5000) in your browser.
 
 ## Folders
-- `backend/`: Flask backend and static demo UI
-- `database/`: Bylaws data and scripts
 
 ## Notes
-- The `/api/ask` endpoint is a placeholder for AI integration.
-- Add your bylaw data to `database/bylaws.json`.
+# Whitby-Bylaws-AI
+
+A demo project for querying Whitby bylaws using an AI backend and vector search.
+
+## Project Structure
+
+- `backend/`: Flask backend and static demo UI
+- `database/`: Bylaws data, scripts, and vector DB
+- `database/raw_bylaws/`: Source PDF bylaws
+- `database/bylaws_json/`: Extracted bylaw JSONs (for ML/embedding)
+- `database/init_chroma.py`: Generate embeddings and store in ChromaDB
+- `database/parse_bylaws.py`: Convert PDFs to JSON
+
+## Quick Start
+
+1. **Install dependencies:**
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+2. **Parse bylaws PDFs to JSON:**
+   ```sh
+   python database/parse_bylaws.py
+   ```
+
+3. **Generate embeddings and store in ChromaDB:**
+   ```sh
+   python database/init_chroma.py
+   ```
+
+4. **Run the backend (Flask):**
+   ```sh
+   cd backend
+   python main.py
+   ```
+
+## Requirements
+- Python 3.8+
+- See `requirements.txt` for Python libraries
+
+## Notes
+- Embeddings use Hugging Face's `sentence-transformers/all-MiniLM-L6-v2` (free, lightweight)
+- Vector DB is ChromaDB (local, persistent)
+- JSONs in `bylaws_json/` are suitable for Hugging Face transformers and other ML workflows
+- `.env` files and ChromaDB data are gitignored
