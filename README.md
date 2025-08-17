@@ -40,8 +40,11 @@ Whitby-Bylaws-AI/
    docker-compose up --build
    ```
 
+
 2. **Access the demo:**
-   Open [http://localhost:5000](http://localhost:5000) in your browser.
+   - **Frontend (Netlify):** Open [https://whitby-bylaws-ai.netlify.app](https://whitby-bylaws-ai.netlify.app) in your browser.
+   - **Frontend (local):** Open [http://localhost:3000](http://localhost:3000) in your browser (if using the frontend locally).
+   - **Backend:** Open [http://localhost:5000](http://localhost:5000) in your browser (Flask API and static demo).
 
 ## Folders
 
