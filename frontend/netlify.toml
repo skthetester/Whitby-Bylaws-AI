@@ -3,6 +3,13 @@
   publish = "."
   command = ""
 
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://whitby-bylaws-ai.fly.dev/api/:splat"
+  status = 200
+  force = true
+
 [[redirects]]
   from = "/*"
   to = "/public_demo.html"
@@ -11,6 +18,6 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; connect-src 'self' https://whitby-bylaws-ai.onrender.com; style-src 'self' 'unsafe-inline'; script-src 'self'"
+  Content-Security-Policy = "default-src 'self'; connect-src 'self' https://whitby-bylaws-ai.fly.dev; style-src 'self' 'unsafe-inline'; script-src 'self'"
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"

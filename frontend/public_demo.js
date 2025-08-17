@@ -1,3 +1,6 @@
+
+const BACKEND_URL = "https://whitby-bylaws-ai.fly.dev"; // Fly.io backend URL
+
 function submitQuestion(event) {
     event.preventDefault();
     const query = document.getElementById('question').value.trim();
@@ -15,7 +18,7 @@ function submitQuestion(event) {
     answerContainer.style.display = 'none';
     loadingIndicator.classList.add('show');
 
-    fetch('https://whitby-bylaws-ai.onrender.com/api/ask', {
+    fetch(`${BACKEND_URL}/api/ask`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: query, bylaw_status: 'active' })
